@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator of desired weight</h2>
+
+        <span class="small-title">Initial weight</span>
+        <div class="range-section">
+            <input type="range"  min="45" max="150"  class="range" id="rangeInitial">
+            <span class="measure" id="measureInitial">kg</span>
+        </div>
+        
+        <span class="small-title">Desired weight</span>
+        <div class="range-section">
+            <input type="range" min="45" max="150" class="range" id="rangeDesired">
+            <span class="measure" id="measureDesired">kg</span>
+        </div>
+
+        <span class="small-title">Height</span>
+        <div class="range-section">
+            <input type="range" min="100" max="230" class="range" id="rangeHeight">
+            <span class="measure" id="measureHeight">cm</span>
+        </div>
+
+        <div class="date-section">
+            
+            <div class="date-div">
+                <p class="small-title">Start date:</p>
+                <input type="date" name="" id="startDate" class="date">  
+            </div>
+            
+            <div class="date-div-second">
+                <span class="small-title">End date:</span>
+                <input type="date" name="" id="endDate" class="date">  
+            </div>    
+        </div>
+        
+        <button class="btn" id="btn">Calculate</button>
+        <div id="result" class="result"></div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
