@@ -10,7 +10,7 @@ var startDate = document.getElementById('startDate').value;
 var endDate = document.getElementById('endDate').value;
 
 
-
+//Suwaki
 measureInitial.innerHTML = rangeInitial.value  + ' kg';
 measureDesired.innerHTML = rangeDesired.value  + ' kg';
 measureHeight.innerHTML = rangeHeight.value  + ' cm';
@@ -40,8 +40,6 @@ function weightChange() {
     currentBmiCompute();
     desiredBmiCompute();
     changePerDayCompute();
-
-
     result.innerHTML = wantedChange + currentBMI + desiredBMI + changePerDay;
 }
 
